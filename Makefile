@@ -5,4 +5,4 @@ bootstrap:
 	brew bundle
 
 dev: build
-	fastly compute serve --skip-build --file ./.build/debug/SwiftFastlyEdgeFunction.wasm
+	fastly compute serve --skip-build --file ./.build/debug/URLShortener.wasm

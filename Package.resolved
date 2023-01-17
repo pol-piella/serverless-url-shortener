@@ -17,6 +17,15 @@
         "revision" : "defff250bbd79d81fb8ee53926360fc522d75bad",
         "version" : "1.6.0"
       }
+    },
+    {
+      "identity" : "upstash",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swift-cloud/Upstash",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f9cb42f22c003e9b98921a034ec69b0908d29f6b"
+      }
     }
   ],
   "version" : 2

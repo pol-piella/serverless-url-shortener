@@ -3,18 +3,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "swift-fastly-edge-function",
+    name: "URLShortener",
     platforms: [.macOS(.v11)],
     products: [
-        .executable(name: "SwiftFastlyEdgeFunction", targets: ["SwiftFastlyEdgeFunction"])
+        .executable(name: "URLShortener", targets: ["URLShortener"])
     ],
     dependencies: [
-        .package(url: "https://github.com/swift-cloud/Compute", from: "2.8.0")
+        .package(url: "https://github.com/swift-cloud/Compute", from: "2.8.0"),
+        .package(url: "https://github.com/swift-cloud/Upstash", branch: "main")
     ],
     targets: [
         .executableTarget(
-            name: "SwiftFastlyEdgeFunction",
-            dependencies: ["Compute"]
+            name: "URLShortener",
+            dependencies: ["Compute", "Upstash"]
         )
     ]
 )
